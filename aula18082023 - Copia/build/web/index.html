@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="configura.css">
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header>
+            <h1>SENAC</h1>
+            <form method="post" action="ControleUsuario">
+                <input type="hidden" name="flag" value="login">
+                <label for="user"> Usuário </label>
+                <input id="user" type="text" name="usuario">
+                <label for="senha"> Senha </label>
+                <input id="senha" type="password" name="senha">
+                <input type="submit" value="Entrar">
+            </form>
+
+</header>
+        
+      
+        
+        <!-- Main chamando a pagina inicial -->
+        <main>
+            <iframe src="inicial.html" name="centro"></iframe>
+        </main>
+        
+        
+        
+          <!-- Rodapé -->
+        <footer>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss"
+                         alt="CSS válido!" />
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>

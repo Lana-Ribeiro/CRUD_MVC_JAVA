@@ -1,0 +1,108 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19/10/2023, 15:58:06
+    Author     : lanac
+*/
+
+
+header, nav, main, footer {
+    width: 90%;    
+}
+
+header{
+    background-color: #918180;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+nav{
+    background-color:appworkspace 
+}
+
+main {
+    height: 300px;
+    background-color:#918180 
+}
+
+footer{
+    background-color:black;
+    color: white
+}
+
+* {
+    margin:0 auto
+}
+
+button.botao {
+    background: white;
+    color: black;
+    border:none;
+    cursor: pointer
+}
+
+div.submenu{
+    display: none
+}
+
+div.menu:hover div.submenu{
+    display: block
+}
+
+div.menu:hover button.botao{
+    background-color: red
+}
+
+div.submenu{
+    display: none;
+    position: absolute;
+    background-color: #c0c0c0;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1
+}
+
+div.submenu a{
+ padding: 5px;
+ text-decoration: none;
+ display: block;
+ color:black
+}
+
+div.submenu a:hover{
+    color:red
+}
+
+
+div.menu{
+    display:inline-block;
+    position:relative
+}
+
+button.botao, div.submenu{
+    min-width: 140px;
+    text-align: left
+}
+
+
+/* Colocando o main na pagina toda */
+main iframe{
+    width: 100%;
+    height: 100%;
+    border:0px
+}
+
+
+/* Quando a tela tiver 600px ou menos */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        background-color: #c0c0c0;
+        font-family: tahoma
+    }
+    
+}
+

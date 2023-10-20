@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="configura.css">
+        
+    </head>
+    <body>
+        
+        <!--CRIANDO FORMULÁRIO PARA CADASTRAR DEPARTAMENTO -->
+        <form method="post" action="ControleDepartamento">
+            <input type="hidden" name="flag" value="cad_dep">
+            
+              <!--cadastrando ID-->
+            <p>
+                <label for="id">Id:*</label>
+                <input id="id" type="text" name="id" size="10" maxlength="10" required>
+            </p>
+            
+              <!--cadastrando Nome -->
+            <p>
+                <label for="nom">Nome:*</label>
+                <input id="nom" type="text" name="nome" size="70" maxlength="70" required>
+            </p> 
+            
+            <!--cadastrando Telefone-->
+            <p>
+                <label for="tel">Telefone:</label>
+                <input id="tel" type="tel" name="telefone" size="15" maxlength="15">
+            </p> 
+            
+            <!--Salvar-->
+            <p>
+                <input type="submit" value="Salvar">
+            </p>            
+        </form>
+    </body>
+</html>
+
+
